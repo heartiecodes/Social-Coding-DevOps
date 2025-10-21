@@ -71,7 +71,7 @@ def get_route(start_coords, end_coords, vehicle):
     """Retrieve route information between two coordinates using GraphHopper Routing API."""
     params = {
         "point": [f"{start_coords[0]},{start_coords[1]}", f"{end_coords[0]},{end_coords[1]}"],
-        "vehicle": vehicle,           # travel mode: car, motorcycle, or foot
+        "vehicle": vehicle,           # travel mode: car, bicycle, or foot
         "locale": "en",               # response language
         "points_encoded": "false",    # ensure coordinates are in readable format
         "calc_points": "true",
@@ -156,9 +156,9 @@ def main():
 
     # --- Step 2: Choose mode of transport ---
     print(Fore.CYAN + "\nChoose your mode of transportation:")
-    print(Fore.MAGENTA + "1. Car\n2. Motorcycle\n3. Foot")
+    print(Fore.MAGENTA + "1. Car\n2. Bike\n3. Foot")
     vehicle_choice = input(Fore.YELLOW + "Enter choice (1/2/3): ").strip()
-    vehicle_map = {"1": "car", "2": "motorcycle", "3": "foot"}
+    vehicle_map = {"1": "car", "2": "bike", "3": "foot"}
     vehicle = vehicle_map.get(vehicle_choice, "car")  # default to car
 
     # --- Step 3: Choose unit system ---
