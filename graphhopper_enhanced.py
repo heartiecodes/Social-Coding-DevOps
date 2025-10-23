@@ -1,3 +1,12 @@
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+# COMMENTS from Team Devnet & Chill - Richelle
+
+# The code is well-structured with clear comments and descriptive function names, uses colorful terminal output with emojis 
+# that makes it visually appealing and user-friendly, and the tabulated data display with fancy grids creates a 
+# professional-looking CLI interface that's easy to read and navigate.
+# +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
 # --- IMPORTS ---
 import requests                     # Used to send HTTP requests to the GraphHopper API
 from tabulate import tabulate        # Used to display data in formatted tables in the terminal
@@ -192,3 +201,4 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
