@@ -1,3 +1,13 @@
+# ==============================================================================================
+# DEVS - GEOTRAVEL
+# Gets coordinates for start and destination, calculates routes with distance, - JUSTIN
+# time, and optional step-by-step directions, and displays results. - JUSTIN
+# Supports kilometers or miles and allows saving summaries to a text file. - JUSTIN
+# Provides a clear, interactive terminal experience for route planning. - JUSTIN
+# ==============================================================================================
+
+
+
 # --- IMPORTS ---
 import requests                     # Used to send HTTP requests to the GraphHopper API
 from tabulate import tabulate        # Used to display data in formatted tables in the terminal
@@ -192,3 +202,4 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
