@@ -6,6 +6,14 @@
 # Provides a clear, interactive terminal experience for route planning. - JUSTIN
 # ==============================================================================================
 
+# ==============================================================================================
+# Team SAISys
+# Zy:
+# Clear modular breakdown (functions for geocoding, routing, conversion, main flow).
+# Keep modularity but separate UI vs. logic for future GUI/CLI integration.
+# Prefer short, focused comments above logical sections, not every line.
+# Function names are clear.
+# ==============================================================================================
 
 
 # --- IMPORTS ---
@@ -202,4 +210,5 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
