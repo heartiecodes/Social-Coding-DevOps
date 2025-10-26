@@ -23,6 +23,12 @@
 # Support multi-vehicle comparison (car/bike/foot) and rank outputs by ETA/distance with a compact summary table.
 # Provide exporters (CSV/JSON) and an HTML report that includes a static map/polyline preview for sharing.
 # Create unit tests for converters/parsers and one integration test that mocks GraphHopper responses.
+
+# Joriz: 
+# The route function works efficiently in getting distance, time, and directions between two points. 
+# It’s straightforward and well-written, making the process smooth and accurate for users.
+# The conversion and display sections are simple but effective. They make the data easier to read by 
+# converting meters to kilometers or miles and showing results neatly in a table, which adds a nice professional touch.
 # ==============================================================================================
 
 # ==============================================================================================
@@ -237,6 +243,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
