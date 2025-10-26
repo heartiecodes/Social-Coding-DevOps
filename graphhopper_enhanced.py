@@ -23,6 +23,15 @@
 # Support multi-vehicle comparison (car/bike/foot) and rank outputs by ETA/distance with a compact summary table.
 # Provide exporters (CSV/JSON) and an HTML report that includes a static map/polyline preview for sharing.
 # Create unit tests for converters/parsers and one integration test that mocks GraphHopper responses.
+# Ragi:
+# Implement modular configuration file (config.json) to store API keys, default units, and preferences.
+# Add error-handling decorators for cleaner code and centralized exception management.
+# Create a visual summary (ASCII/colored output) for route details in terminal using rich or colorama.
+# Integrate environment variable support (.env) for sensitive data instead of hardcoding keys (API Keys).
+# Refactor repetitive code into helper utilities for cleaner, more maintainable functions.
+# Plan for scalability — ensure functions can be reused for future web or mobile integration.
+# Add clear docstrings and inline examples to make the codebase beginner-friendly for new contributors.
+
 # ==============================================================================================
 
 # ==============================================================================================
