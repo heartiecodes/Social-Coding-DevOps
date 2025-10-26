@@ -15,6 +15,16 @@
 # Function names are clear.
 # ==============================================================================================
 
+# ==============================================================================================
+# COMMENTS from Team Devnet & Chill - Via
+# Add “Batch Compare” mode: let users enter multiple destinations (comma-separated) and show a ranked table of distance/time before choosing one.
+# Add “Copy Summary” action: one click copies a clean text snippet (Start → End, vehicle, distance, ETA) to the clipboard for quick sharing.
+# Include an offline caching option where previously fetched routes can be viewed again without internet access.
+# Allow exporting of results to CSV or PDF format for documentation or report purposes.
+# Integrate a simple “Favorite Routes” list so users can bookmark frequently traveled paths.
+# Add an optional weather info widget to show current conditions at the destination for travel readiness.
+# ==============================================================================================
+
 
 # --- IMPORTS ---
 import requests                     # Used to send HTTP requests to the GraphHopper API
@@ -210,5 +220,6 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
