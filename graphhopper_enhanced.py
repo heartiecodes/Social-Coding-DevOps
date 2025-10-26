@@ -13,6 +13,16 @@
 # Keep modularity but separate UI vs. logic for future GUI/CLI integration.
 # Prefer short, focused comments above logical sections, not every line.
 # Function names are clear.
+
+# Malvin:
+# Add argparse flags (--vehicle, --unit, --steps, --save, --format csv/json) to make the tool scriptable and CI-friendly.
+# Enforce robust HTTP settings: timeouts, retry with exponential backoff, and 429 rate-limit handling with jitter.
+# Cache geocode and route results (keyed by query+vehicle) to JSON/SQLite for faster repeats and limited offline use.
+# Validate inputs early (empty strings, identical start/end, unsupported unit/vehicle); return clear, actionable errors.
+# Add structured logging (INFO/WARN/ERROR) with timestamps and a --verbose flag; write errors to a rotating log file.
+# Support multi-vehicle comparison (car/bike/foot) and rank outputs by ETA/distance with a compact summary table.
+# Provide exporters (CSV/JSON) and an HTML report that includes a static map/polyline preview for sharing.
+# Create unit tests for converters/parsers and one integration test that mocks GraphHopper responses.
 # ==============================================================================================
 
 # ==============================================================================================
@@ -220,6 +230,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
