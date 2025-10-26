@@ -35,6 +35,13 @@
 # Add an optional weather info widget to show current conditions at the destination for travel readiness.
 # ==============================================================================================
 
+# ==============================================================================================
+# COMMENTS from Jaeho (Developer Reflection)
+# Code is clean, elegant, and thoughtfully structured.
+# The balance between functionality and user-friendliness is excellent.
+# Very proud of how interactive and visually appealing this CLI app turned out.
+# Great foundation for future enhancements while already feeling feature-rich and solid.
+# ==============================================================================================
 
 # --- IMPORTS ---
 import requests                     # Used to send HTTP requests to the GraphHopper API
@@ -230,6 +237,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
