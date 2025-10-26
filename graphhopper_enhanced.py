@@ -33,6 +33,12 @@
 # Allow exporting of results to CSV or PDF format for documentation or report purposes.
 # Integrate a simple “Favorite Routes” list so users can bookmark frequently traveled paths.
 # Add an optional weather info widget to show current conditions at the destination for travel readiness.
+
+# COMMENTS from Team Devnet & Chill - Zac
+# The program is well-structured, user-friendly, and demonstrates effective integration of an external API. Its
+# modular design makes it easy to maintain and extend with additional features such as multiple transport
+# modes, map visualization, or cost estimation. The use of formatted tables and clear feedback improves
+# readability and overall user experience.
 # ==============================================================================================
 
 
