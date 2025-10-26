@@ -4,6 +4,9 @@
 # time, and optional step-by-step directions, and displays results. - JUSTIN
 # Supports kilometers or miles and allows saving summaries to a text file. - JUSTIN
 # Provides a clear, interactive terminal experience for route planning. - JUSTIN
+
+# Overall, the application itself has functioning purposes from start to finish. It just - RICCI
+# needs a GUI rather than processing through the terminal. - RICCI
 # ==============================================================================================
 
 
@@ -202,4 +205,5 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
