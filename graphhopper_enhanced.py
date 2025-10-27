@@ -36,6 +36,22 @@
 # ==============================================================================================
 
 # ==============================================================================================
+# COMMENTS from Rupert (Team Devnet & Chill)
+# The code showcases an impressive mix of structure and clarity. Each function
+# has a defined purpose and contributes to the overall workflow without clutter.
+# I like how the user interaction feels smooth and straightforward, which makes
+# it easy to navigate even for non-technical users.
+# 
+# For enhancement, I’d recommend expanding the interactivity — such as enabling
+# batch destination comparison or adding export options like PDF for presentation use.
+# Integrating a favorite routes list would also give the app a more personal touch.
+# 
+# Overall, this project feels reliable, user-focused, and ready to evolve into a
+# more dynamic travel assistant in the future.
+# ==============================================================================================
+
+
+# ==============================================================================================
 # COMMENTS from Jaeho (Developer Reflection)
 # Code is clean, elegant, and thoughtfully structured.
 # The balance between functionality and user-friendliness is excellent.
@@ -237,6 +253,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
