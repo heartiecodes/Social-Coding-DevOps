@@ -52,6 +52,12 @@
 
 
 # ==============================================================================================
+# COMMENTS from Jose (Team Devnet & Chill)
+# My specific observations are that there is no input validation for entering the same location twice
+# and the API key is visible which is not a safe coding practice where the API key is open to the public's eye.
+# ==============================================================================================
+
+# ==============================================================================================
 # COMMENTS from Jaeho (Developer Reflection)
 # Code is clean, elegant, and thoughtfully structured.
 # The balance between functionality and user-friendliness is excellent.
@@ -253,6 +259,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
