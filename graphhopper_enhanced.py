@@ -4,6 +4,10 @@
 # time, and optional step-by-step directions, and displays results. - JUSTIN
 # Supports kilometers or miles and allows saving summaries to a text file. - JUSTIN
 # Provides a clear, interactive terminal experience for route planning. - JUSTIN
+#BY ROMASANTA
+# This program uses the GraphHopper API to find routes between two locations. It shows the total distance,
+# estimated travel time, and step-by-step directions in a simple, colorful terminal display. Users can also
+# choose units, view detailed routes, and save the summary to a file.
 # ==============================================================================================
 
 # ==============================================================================================
@@ -259,6 +263,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
