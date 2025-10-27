@@ -4,6 +4,13 @@
 # time, and optional step-by-step directions, and displays results. - JUSTIN
 # Supports kilometers or miles and allows saving summaries to a text file. - JUSTIN
 # Provides a clear, interactive terminal experience for route planning. - JUSTIN
+# This code is well-written because it’s modular and organized. - NICOLE
+# Each function has a clear purpose: geocoding, getting routes, converting units, and displaying results. - NICOLE
+# It uses error handling to prevent crashes when API requests fail. - NICOLE
+# The use of 'tabulate' makes output clean and readable in tables. - NICOLE
+# 'colorama' adds color to text, making the terminal output easier to follow. - NICOLE
+# It also gives users choices, like unit system and saving results, which improves usability. - NICOLE
+# Overall, it’s a structured and user-friendly script for route finding. - NICOLE
 # ==============================================================================================
 
 # ==============================================================================================
@@ -237,6 +244,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
