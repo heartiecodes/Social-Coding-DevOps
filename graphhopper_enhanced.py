@@ -5,6 +5,13 @@
 # Supports kilometers or miles and allows saving summaries to a text file. - JUSTIN
 # Provides a clear, interactive terminal experience for route planning. - JUSTIN
 # ==============================================================================================
+# DEVS - GEOTRAVEL From Zaki
+# Handles route generation and mapping features for user travel queries.
+# Converts location names into precise coordinates using external APIs.
+# Calculates optimal paths, travel duration, and total distance.
+# Displays information in an interactive and user-friendly terminal interface.
+# Designed for modularity, scalability, and team-based development.
+# ==============================================================================================
 
 # ==============================================================================================
 # Team SAISys
@@ -253,6 +260,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
