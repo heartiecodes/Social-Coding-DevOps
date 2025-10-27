@@ -4,6 +4,11 @@
 # time, and optional step-by-step directions, and displays results. - JUSTIN
 # Supports kilometers or miles and allows saving summaries to a text file. - JUSTIN
 # Provides a clear, interactive terminal experience for route planning. - JUSTIN
+# Vincent - Integrate a graphical user interface (GUI) using libraries like Tkinter or PyQt to
+# make the route finder more interactive and user-friendly. The GUI could include input fields
+# for origin and destination, a dropdown for vehicle type, real-time progress indicators, and a
+# map preview displaying the generated route — providing a richer and more intuitive user
+# experience compared to the command-line interface.
 # ==============================================================================================
 
 # ==============================================================================================
@@ -237,6 +242,7 @@ def main():
 # --- PROGRAM ENTRY POINT ---
 if __name__ == "__main__":
     main()
+
 
 
 
