@@ -1,0 +1,34 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main  # Runs when changes are pushed to the main branch
+  pull_request:
+    branches:
+      - main  # Runs for pull requests targeting the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Uses the latest Ubuntu environment
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2  # Checks out the code
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14'  # Replace with your desired Node.js version
+
+    - name: Install dependencies
+      run: npm install  # Replace with your dependency manager command (e.g., yarn install)
+
+    - name: Run tests
+      run: npm test  # Runs your test command
+
+    - name: Deploy (optional)
+      if: success()  # Deploys only if the tests pass
+      run: |
+        echo "Deploying to production..."
+        # Add your deployment steps here (e.g., pushing to cloud services)
