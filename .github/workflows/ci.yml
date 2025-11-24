@@ -3,32 +3,47 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # Runs when changes are pushed to the main branch
+      - main
   pull_request:
     branches:
-      - main  # Runs for pull requests targeting the main branch
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest  # Uses the latest Ubuntu environment
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2  # Checks out the code
+      uses: actions/checkout@v3
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Set up Python
+      uses: actions/setup-python@v4
       with:
-        node-version: '14'  # Replace with your desired Node.js version
+        python-version: '3.11'
+
+    - name: Cache pip
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
 
     - name: Install dependencies
-      run: npm install  # Replace with your dependency manager command (e.g., yarn install)
+      run: |
+        python -m pip install --upgrade pip
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        if [ -f pyproject.toml ]; then
+          python -m pip install poetry
+          poetry install --no-interaction
+        fi
 
     - name: Run tests
-      run: npm test  # Runs your test command
+      run: |
+        if command -v pytest >/dev/null 2>&1; then pytest -q; else echo "pytest not installed or no tests found"; fi
 
     - name: Deploy (optional)
-      if: success()  # Deploys only if the tests pass
+      if: success()
       run: |
         echo "Deploying to production..."
-        # Add your deployment steps here (e.g., pushing to cloud services)
