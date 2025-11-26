@@ -1,4 +1,14 @@
 # ==============================================================================================
+# TEAM DEVNET & CHILL - HENRICK YURIE
+# This Python program is an interactive command-line Route Finder that uses the GraphHopper API to convert place names into coordinates,
+# calculate the optimal driving route between them, and display distance, duration, and turn-by-turn directions. It integrates color-coded
+# terminal output for better user experience, formats data in readable tables, supports both kilometers and miles, and can optionally
+# save the route summary to a file — making it a practical example of combining APIs, data formatting, and user interaction in one script.
+# ==============================================================================================
+
+
+
+# ==============================================================================================
 # DEVS - GEOTRAVEL
 # Gets coordinates for start and destination, calculates routes with distance, - JUSTIN
 # time, and optional step-by-step directions, and displays results. - JUSTIN
